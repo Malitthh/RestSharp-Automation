@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "c6e1c220-f80d-4be9-8a21-baae38ac34b8",
+		"name": "restful-api.dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17429192"
+	},
+	"item": [
+		{
+			"name": "GET-All Objects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD-An Object",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"TUF Gaming B760\",\r\n  \"data\": {\r\n    \"year\": 2024,\r\n    \"price\": 1849.99,\r\n    \"CPU model\": \"Intel Core i5 14600K\",\r\n    \"Hard disk size\": \"1 TB\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Existing Object",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects?id=ff80818192925da70192bf0a0b646ac6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "ff80818192925da70192bf0a0b646ac6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-Existing Object",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"TUF Gaming B760 Plus WIFI\",\r\n  \"data\": {\r\n    \"year\": 2024,\r\n    \"price\": 1849.99,\r\n    \"CPU model\": \"Intel Core i7 14700K\",\r\n    \"Hard disk size\": \"1 TB\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff80818192925da70192bf0a0b646ac6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff80818192925da70192bf0a0b646ac6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-Existing Object",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff80818192925da70192bf0a0b646ac6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff80818192925da70192bf0a0b646ac6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
