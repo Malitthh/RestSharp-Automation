@@ -5556,11 +5556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\Source\\Repos\\RestSharp-Automation\\RestSharp-Automation\\RestSharp-Automation.csproj",
+      "projectUniqueName": "D:\\Learning\\Source\\Repos\\RestSharp-Automation\\RestSharp-Automation.csproj",
       "projectName": "RestSharp-Automation",
-      "projectPath": "D:\\Learning\\Source\\Repos\\RestSharp-Automation\\RestSharp-Automation\\RestSharp-Automation.csproj",
+      "projectPath": "D:\\Learning\\Source\\Repos\\RestSharp-Automation\\RestSharp-Automation.csproj",
       "packagesPath": "C:\\Users\\MalithSenadheera\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\Source\\Repos\\RestSharp-Automation\\RestSharp-Automation\\obj\\",
+      "outputPath": "D:\\Learning\\Source\\Repos\\RestSharp-Automation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MalithSenadheera\\AppData\\Roaming\\NuGet\\NuGet.Config"

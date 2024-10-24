@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestSharp-Automation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b89a6fa62ced6a6abd2e3deee6f2b257f84570b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88e3ac151241754b909a68b5690338c5ca547028")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestSharp-Automation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestSharp-Automation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
