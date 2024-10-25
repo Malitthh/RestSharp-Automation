@@ -103,16 +103,5 @@
       "Price": "519.99",
       "Capacity": "256 GB"
     }
-  },
-  {
-    "id": "ff80818192925da70192c15066a66df1",
-    "name": "ASUS TUF B760M Plus WIFI",
-    "createdAt": "2024-10-25T07:05:24.838+05:30",
-    "data": {
-      "year": 2024,
-      "price": 1599.99,
-      "CPU model": "AMD RYZEN 7 5800X3D",
-      "Hard disk size": "2 TB"
-    }
   }
 ]
