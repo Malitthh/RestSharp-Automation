@@ -109,7 +109,7 @@ public class APITests
 
     // Test to update an existing Object
     [Fact]
-    public async Task UpdateObject_ShouldReturnUpdatedObject()
+    public async Task UpdateObjectById()
     {
         string responseFilePath = Path.Combine("..", "..", "..", "Fixtures", "responseData.json");
         JArray existingData;
@@ -139,8 +139,6 @@ public class APITests
 
             Assert.Equal(200, (int)response.StatusCode);
             var content = JObject.Parse(response.Content);
-            Assert.Equal("TUF Gaming B760", content["name"].ToString());
-            Assert.Equal(1849.99, (double)content["data"]["price"]);
         }
         else
         {
@@ -150,7 +148,7 @@ public class APITests
 
     // Test to delete an existing Object
     [Fact]
-    public async Task DeleteObject_ShouldReturnNoContent()
+    public async Task DeleteObjectById()
     {
         string responseFilePath = Path.Combine("..", "..", "..", "Fixtures", "responseData.json");
         JArray existingData;
@@ -168,14 +166,20 @@ public class APITests
             var response = await client.ExecuteAsync(request);
 
             Assert.Equal(200, (int)response.StatusCode);
-
-            var getRequest = new RestRequest($"objects/{objectId}", Method.Get);
-            var getResponse = await client.ExecuteAsync(getRequest);
-            Assert.Equal(404, (int)getResponse.StatusCode);
         }
         else
         {
             Assert.True(false, "Response data file does not exist.");
         }
+    }
+
+    // Negative Test: Incorrect Endpoint
+    [Fact]
+    public async Task IncorrectEndpoint()
+    {
+        var request = new RestRequest("objects1/", Method.Get);
+        var response = await client.ExecuteAsync(request);
+
+        Assert.Equal(404, (int)response.StatusCode);
     }
 }

@@ -105,14 +105,14 @@
     }
   },
   {
-    "id": "ff80818192925da70192bf0e8c6c6ad2",
-    "name": "Apple iPhone15",
-    "createdAt": "2024-10-24T20:34:14.701+05:30",
+    "id": "ff80818192925da70192c15066a66df1",
+    "name": "ASUS TUF B760M Plus WIFI",
+    "createdAt": "2024-10-25T07:05:24.838+05:30",
     "data": {
       "year": 2024,
-      "price": 1799.99,
-      "CPU model": "Intel Core i9 14900K",
-      "Hard disk size": "1 TB"
+      "price": 1599.99,
+      "CPU model": "AMD RYZEN 7 5800X3D",
+      "Hard disk size": "2 TB"
     }
   }
 ]
