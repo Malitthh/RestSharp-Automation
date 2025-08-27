@@ -5,6 +5,10 @@
 This Project contains the API Automation Testing for Restful API Service
 https://restful-api.dev/
 
+### HTTP Codes
+
+1. https://status.js.org/
+
 ### Table of Contents
 
 1. Prerequisites
