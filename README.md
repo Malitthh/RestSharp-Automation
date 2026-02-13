@@ -27,7 +27,7 @@ https://restful-api.dev/
 for this project,
 
 1. Clone the Project into your working Machine.
-2. Make sure to fulfill the Pre-req
+2. Make sure to fulfill Prerequisites.
 
 ### Running the Tests
 
